@@ -1,2 +1,1 @@
-able to do simple  \n
-gcss
+able to do simple c coding
