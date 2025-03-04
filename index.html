@@ -58,11 +58,14 @@
         <p>I write codes, find bugs, and chatgpt my way through it all. My secret? Compile, error on line 32, chatgpt it, repeat</p>
         
         <button onclick="showEmail()">Show Email</button>
-        <div id="email">contact@redwood101020.xyz</div>
+        <div id="email"></div>
     </div>
 
     <script>
         function showEmail() {
+            let encodedEmail = "Y29udGFjdEByZWR3b29kMTAxMDIwLnh5eg==";
+            let decodedEmail = atob(encodedEmail); 
+            document.getElementById("email").textContent = decodedEmail;
             document.getElementById("email").style.display = "block";
         }
     </script>
