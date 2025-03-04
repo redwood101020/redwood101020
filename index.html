@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: radial-gradient(circle at 20% 20%, #ff7e5f, #feb47b); /* Adjusted position */
+            background: radial-gradient(circle at 20% 20%, #ff7e5f, #feb47b);
             margin: 0;
             padding: 0;
             display: flex;
@@ -30,12 +30,41 @@
             font-size: 18px;
             color: #555;
         }
+        #email {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff7e5f;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e56b50;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Redwood101020's Portfolio</h1>
         <p>I write codes, find bugs, and chatgpt my way through it all. My secret? Compile, error on line 32, chatgpt it, repeat</p>
+        
+        <button onclick="showEmail()">Show Email</button>
+        <div id="email">📧 myemail@example.com</div>
     </div>
+
+    <script>
+        function showEmail() {
+            document.getElementById("email").style.display = "block";
+        }
+    </script>
 </body>
 </html>
